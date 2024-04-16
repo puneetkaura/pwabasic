@@ -14,7 +14,7 @@ function App() {
       <div class="h-full w-full bg-teal-400 w-1/2 p-4 mx-auto text-center border">
      
         <><h1 class="text-2xl">Mrs. Anjali chikkara PREGNANCY TRACKER</h1>
-        <><h2> Full Name : {name} </h2><h2 class="text-2xl"> lmpDate : {lmpDate} </h2></></>
+        <><h2 class="text-2xl"> Full Name : {name} </h2><h2 class="text-2xl"> lmpDate : {lmpDate} </h2></></>
          
     </div>
     <table>
