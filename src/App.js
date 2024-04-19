@@ -11,10 +11,14 @@ function App() {
   const lmpDate = searchParams.get("lmpDate")
   return (
     <div className="App">
-      <div class="h-full w-full bg-teal-400 w-1/2 p-4 mx-auto text-center border">
+      <div class="h-full w-full bg-blue-500 w-1/2 p-2 mx-auto text-center border">
      
-        <><h1 class="text-4xl text-center text-pink-700	 ">Mrs. Anjali chikkara PREGNANCY TRACKER</h1><br></br>
-        <><h2 class="text-2xl"> Full Name : {name} </h2><h2 class="text-2xl"> lmpDate : {lmpDate} </h2></></>
+        <><h1 class="text-4xl text-center text-white 	height: 1px;">Pregnancy Tests Chart By Dr Richa Malhan</h1><br/>
+       
+        <div className='	flex-direction: column-reverse;'><h2 class="text-2xl">
+          <span className='text-white text-2xl'> Patient Name : {name}   LMP Date : {lmpDate} </span> </h2> </div>
+        </>
+       
          
     </div>
     <table>
@@ -26,15 +30,16 @@ function App() {
               <th>Trimsester</th>
               <th>Pregnancy month</th>
               <th>Start week</th>
-              <th>End week</th>
+              <th>Week due</th>
               <th>Start Date</th>
-              <th>End Date</th>
+              <th>Due Date</th>
             </tr>
       </thead>
      
       <tbody>
        {
-        // DATA.filter(item => item.StartDate > lmpDate).map((item)=>
+       
+      //  DATA.filter(item => item.StartDate > lmpDate).map((item)=>(
         DATA.map((item)=>(
         <tr class="even:bg-gray-100 odd:bg-white">
         <td className='text-pink-700 text-3xl'>{item["Id"]}</td>
@@ -43,9 +48,9 @@ function App() {
         <td>{item["Trimsester"]}</td>
         <td>{item["Pregnancymonth"]}</td>
         <td>{item["Startweek"]}</td>
-        <td>{item["Endweek"]}</td>
+        <td>{item["Weekdue"]}</td>
         <td>{item["StartDate"]}</td>
-        <td>{item["EndDate "]}</td>
+        <td>{item["DueDate "]}</td>
       </tr>
       ))}
        

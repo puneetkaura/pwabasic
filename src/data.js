@@ -7,9 +7,9 @@ export const DATA = [
         "Trimsester": "1st",
         "Pregnancymonth": "2nd",
         "Startweek": "5",
-        "Endweek": "10",
+        "Weekdue": "10",
         "StartDate": "15-Mar-2024",
-        "EndDate ": "19-Apr-2024"
+        "DueDate ": "19-Apr-2024"
     },
     {
         "Id":2,
@@ -19,9 +19,9 @@ export const DATA = [
         "Trimsester": "1st",
         "Pregnancymonth": "2nd",
         "Startweek": "5",
-        "Endweek": "10",
+        "Weekdue": "10",
         "StartDate": "15-Mar-2024",
-        "EndDate ": "19-Apr-2024"
+        "DueDate ": "19-Apr-2024"
     },
     {
         "Id":3,
@@ -31,9 +31,9 @@ export const DATA = [
         "Trimsester": "1st",
         "Pregnancymonth": "2nd",
         "Startweek": "5",
-        "Endweek": "10",
+        "Weekdue": "10",
         "StartDate": "15-Mar-2024",
-        "EndDate ": "19-Apr-2024"
+        "DueDate ": "19-Apr-2024"
     },
     {
         "Id":4,
@@ -43,9 +43,9 @@ export const DATA = [
         "Trimsester": "1st",
         "Pregnancymonth": "2nd",
         "Startweek": "7",
-        "Endweek": "10",
+        "Weekdue": "10",
         "StartDate": "29-Mar-2024",
-        "EndDate ": "19-Apr-2024"
+        "DueDate ": "19-Apr-2024"
        
     },
     {
@@ -56,9 +56,9 @@ export const DATA = [
         "Trimsester": "1st",
         "Pregnancymonth": "3rd",
         "Startweek": "11",
-        "Endweek": "13",
+        "Weekdue": "13",
         "StartDate": "26-Apr-2024",
-        "EndDate ": "10-May-2024"
+        "DueDate ": "10-May-2024"
         
     },
     {
@@ -69,9 +69,9 @@ export const DATA = [
         "Trimsester": "2nd",
         "Pregnancymonth": "5th",
         "Startweek": "18",
-        "Endweek": "21",
+        "Weekdue": "21",
         "StartDate": "14-Jun-2024",
-        "EndDate ": "5-Jul-2024"
+        "DueDate ": "5-Jul-2024"
         
     },
     {
@@ -82,9 +82,9 @@ export const DATA = [
         "Trimsester": "2nd",
         "Pregnancymonth": "5th",
         "Startweek": "20",
-        "Endweek": "21",
+        "Weekdue": "21",
         "StartDate": "28-Jun-2024",
-        "EndDate ": "5-Jul-2024"
+        "DueDate ": "5-Jul-2024"
        
     },
     {
@@ -95,9 +95,9 @@ export const DATA = [
         "Trimsester": "2nd",
         "Pregnancymonth": "6th",
         "Startweek": "26",
-        "Endweek": "40",
+        "Weekdue": "40",
         "StartDate": "9-Aug-2024",
-        "EndDate ": "15-Nov-2024"
+        "DueDate ": "15-Nov-2024"
        
     },
     {
@@ -108,9 +108,9 @@ export const DATA = [
         "Trimsester": "2nd",
         "Pregnancymonth": "6th",
         "Startweek": "27",
-        "Endweek": "36",
+        "Weekdue": "36",
         "StartDate": "16-Aug-2024",
-        "EndDate ": "18-Oct-2024"
+        "DueDate ": "18-Oct-2024"
        
     },
     {
@@ -121,9 +121,9 @@ export const DATA = [
         "Trimsester": "3rd",
         "Pregnancymonth": "7th",
         "Startweek": "28",
-        "Endweek": "29",
+        "Weekdue": "29",
         "StartDate": "23-Aug-2024",
-        "EndDate ": "30-Aug-2024"
+        "DueDate ": "30-Aug-2024"
         
     },
     {
@@ -134,9 +134,9 @@ export const DATA = [
         "Trimsester": "3rd",
         "Pregnancymonth": "7th",
         "Startweek": "28",
-        "Endweek": "32",
+        "Weekdue": "32",
         "StartDate": "23-Aug-2024",
-        "EndDate ": "20-Sep-2024"
+        "DueDate ": "20-Sep-2024"
         
     },
     {
@@ -147,9 +147,9 @@ export const DATA = [
         "Trimsester": "3rd",
         "Pregnancymonth": "7th",
         "Startweek": "28",
-        "Endweek": "29",
+        "Weekdue": "29",
         "StartDate": "23-Aug-2024",
-        "EndDate ": "30-Aug-2024"
+        "DueDate ": "30-Aug-2024"
     },
     {
         "Id":13,
@@ -159,9 +159,9 @@ export const DATA = [
         "Trimsester": "3rd",
         "Pregnancymonth": "7th",
         "Startweek": "28",
-        "Endweek": "29",
+        "Weekdue": "29",
         "StartDate": "23-Aug-2024",
-        "EndDate ": "30-Aug-2024"
+        "DueDate ": "30-Aug-2024"
 
     },
     {
@@ -172,9 +172,9 @@ export const DATA = [
         "Trimsester": "3rd",
         "Pregnancymonth": "8th",
         "Startweek": "34",
-        "Endweek": "35",
+        "Weekdue": "35",
         "StartDate": "4-Oct-2024",
-        "EndDate ": "11-Oct-2024"
+        "DueDate ": "11-Oct-2024"
         
     },
     {
@@ -185,9 +185,9 @@ export const DATA = [
         "Trimsester": "3rd",
         "Pregnancymonth": "8th",
         "Startweek": "34",
-        "Endweek": "36",
+        "Weekdue": "36",
         "StartDate": "4-Oct-2024",
-        "EndDate ": "18-Oct-2024"
+        "DueDate ": "18-Oct-2024"
         
     },
     {
@@ -198,9 +198,9 @@ export const DATA = [
         "Trimsester": "3rd",
         "Pregnancymonth": "9th",
         "Startweek": "37",
-        "Endweek": "38",
+        "Weekdue": "38",
         "StartDate": "25-Oct-2024",
-        "EndDate ": "1-Nov-2024"
+        "DueDate ": "1-Nov-2024"
        
     },
     {
@@ -211,9 +211,9 @@ export const DATA = [
         "Trimsester": "3rd",
         "Pregnancymonth": "9th",
         "Startweek": "37",
-        "Endweek": "38",
+        "Weekdue": "38",
         "StartDate": "25-Oct-2024",
-        "EndDate ": "1-Nov-2024"
+        "DueDate ": "1-Nov-2024"
        
     },
     {
@@ -224,9 +224,9 @@ export const DATA = [
         "Trimsester": "3rd",
         "Pregnancymonth": "9th",
         "Startweek": "37",
-        "Endweek": "40",
+        "Weekdue": "40",
         "StartDate": "25-Oct-2024",
-        "EndDate ": "15-Nov-2024"
+        "DueDate ": "15-Nov-2024"
        
     }
 ]
