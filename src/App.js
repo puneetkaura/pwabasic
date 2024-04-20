@@ -20,9 +20,9 @@ function App() {
         <thead class="h-full w-full bg-teal-400 w-1/2 p-4 mx-auto text-center text-pink-700 border">
           <tr class="bg-white">
             <th>Id</th>
-            <th>Checkup</th>
+            <th>Test</th>
             <th>Trimsester</th>
-            <th>Pregnancy month</th>
+            <th>Month</th>
             <th>Week due</th>
             <th>Due Date</th>
           </tr>
