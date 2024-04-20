@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <div class="h-full w-full bg-blue-500 w-1/2 p-2 mx-auto text-center border">
         <><h1 class="text-1xl text-center text-white ">Pregnancy Tests Chart By Dr Richa Malhan</h1>
-          <div className='	flex-direction: column-reverse;'><h2 class="text-1xl">
-            <span className='text-white text-1xl'> Patient Name : {name}   LMP Date : {lmpDate} </span> </h2> </div>
+          <div className='	flex-direction: column-reverse;'><h2 class="text-sm">
+            <span className='text-white text-sm'> Patient Name : {name}   LMP Date : {lmpDate} </span> </h2> </div>
         </>
       </div>
       <table>
