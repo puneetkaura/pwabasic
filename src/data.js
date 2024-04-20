@@ -9,7 +9,7 @@ export const DATA = [
         "Startweek": "5",
         "Weekdue": "10",
         "StartDate": "15-Mar-2024",
-        "DueDate ": "19-Apr-2024"
+        "DueDate": "19-Apr-2024"
     },
     {
         "Id":2,
@@ -21,7 +21,7 @@ export const DATA = [
         "Startweek": "5",
         "Weekdue": "10",
         "StartDate": "15-Mar-2024",
-        "DueDate ": "19-Apr-2024"
+        "DueDate": "19-Apr-2024"
     },
     {
         "Id":3,
@@ -33,7 +33,7 @@ export const DATA = [
         "Startweek": "5",
         "Weekdue": "10",
         "StartDate": "15-Mar-2024",
-        "DueDate ": "19-Apr-2024"
+        "DueDate": "19-Apr-2024"
     },
     {
         "Id":4,
@@ -45,7 +45,7 @@ export const DATA = [
         "Startweek": "7",
         "Weekdue": "10",
         "StartDate": "29-Mar-2024",
-        "DueDate ": "19-Apr-2024"
+        "DueDate": "19-Apr-2024"
        
     },
     {
@@ -58,7 +58,7 @@ export const DATA = [
         "Startweek": "11",
         "Weekdue": "13",
         "StartDate": "26-Apr-2024",
-        "DueDate ": "10-May-2024"
+        "DueDate": "10-May-2024"
         
     },
     {
@@ -71,7 +71,7 @@ export const DATA = [
         "Startweek": "18",
         "Weekdue": "21",
         "StartDate": "14-Jun-2024",
-        "DueDate ": "5-Jul-2024"
+        "DueDate": "5-Jul-2024"
         
     },
     {
@@ -84,7 +84,7 @@ export const DATA = [
         "Startweek": "20",
         "Weekdue": "21",
         "StartDate": "28-Jun-2024",
-        "DueDate ": "5-Jul-2024"
+        "DueDate": "5-Jul-2024"
        
     },
     {
@@ -97,7 +97,7 @@ export const DATA = [
         "Startweek": "26",
         "Weekdue": "40",
         "StartDate": "9-Aug-2024",
-        "DueDate ": "15-Nov-2024"
+        "DueDate": "15-Nov-2024"
        
     },
     {
@@ -110,7 +110,7 @@ export const DATA = [
         "Startweek": "27",
         "Weekdue": "36",
         "StartDate": "16-Aug-2024",
-        "DueDate ": "18-Oct-2024"
+        "DueDate": "18-Oct-2024"
        
     },
     {
@@ -123,7 +123,7 @@ export const DATA = [
         "Startweek": "28",
         "Weekdue": "29",
         "StartDate": "23-Aug-2024",
-        "DueDate ": "30-Aug-2024"
+        "DueDate": "30-Aug-2024"
         
     },
     {
@@ -136,7 +136,7 @@ export const DATA = [
         "Startweek": "28",
         "Weekdue": "32",
         "StartDate": "23-Aug-2024",
-        "DueDate ": "20-Sep-2024"
+        "DueDate": "20-Sep-2024"
         
     },
     {
@@ -149,7 +149,7 @@ export const DATA = [
         "Startweek": "28",
         "Weekdue": "29",
         "StartDate": "23-Aug-2024",
-        "DueDate ": "30-Aug-2024"
+        "DueDate": "30-Aug-2024"
     },
     {
         "Id":13,
@@ -161,7 +161,7 @@ export const DATA = [
         "Startweek": "28",
         "Weekdue": "29",
         "StartDate": "23-Aug-2024",
-        "DueDate ": "30-Aug-2024"
+        "DueDate": "30-Aug-2024"
 
     },
     {
@@ -174,7 +174,7 @@ export const DATA = [
         "Startweek": "34",
         "Weekdue": "35",
         "StartDate": "4-Oct-2024",
-        "DueDate ": "11-Oct-2024"
+        "DueDate": "11-Oct-2024"
         
     },
     {
@@ -187,7 +187,7 @@ export const DATA = [
         "Startweek": "34",
         "Weekdue": "36",
         "StartDate": "4-Oct-2024",
-        "DueDate ": "18-Oct-2024"
+        "DueDate": "18-Oct-2024"
         
     },
     {
@@ -200,7 +200,7 @@ export const DATA = [
         "Startweek": "37",
         "Weekdue": "38",
         "StartDate": "25-Oct-2024",
-        "DueDate ": "1-Nov-2024"
+        "DueDate": "1-Nov-2024"
        
     },
     {
@@ -213,7 +213,7 @@ export const DATA = [
         "Startweek": "37",
         "Weekdue": "38",
         "StartDate": "25-Oct-2024",
-        "DueDate ": "1-Nov-2024"
+        "DueDate": "1-Nov-2024"
        
     },
     {
@@ -226,7 +226,7 @@ export const DATA = [
         "Startweek": "37",
         "Weekdue": "40",
         "StartDate": "25-Oct-2024",
-        "DueDate ": "15-Nov-2024"
+        "DueDate": "15-Nov-2024"
        
     }
 ]

@@ -1,6 +1,5 @@
 import './App.css';
 import DATA from './data';
-
 import Accordion from './accordian'
 import { useSearchParams } from "react-router-dom";
 
@@ -21,13 +20,11 @@ function App() {
       <table>
         <thead class="h-full w-full bg-teal-400 w-1/2 p-4 mx-auto text-center text-pink-700 border">
           <tr class="bg-white">
-            <th>Importance</th>
+            {/* <th>Importance</th> */}
             <th>Checkup</th>
             <th>Trimsester</th>
             <th>Pregnancy month</th>
-            <th>Start week</th>
             <th>Week due</th>
-            <th>Start Date</th>
             <th>Due Date</th>
           </tr>
         </thead>
@@ -38,16 +35,15 @@ function App() {
             DATA.map((item) => (
 
               <tr className="even:bg-gray-100 odd:bg-white accordion">
-                  
                 <td className='text-pink-700 text-1xl'>
-                <Accordion  Importance={item["Importance"]} /></td>
-                <td>{item["Checkup"]}</td>
+                </td>
+                <td>{item["Checkup"]}
+                <Accordion  Importance={item["Importance"]} />
+                </td>
                 <td>{item["Trimsester"]}</td>
                 <td>{item["Pregnancymonth"]}</td>
-                <td>{item["Startweek"]}</td>
                 <td>{item["Weekdue"]}</td>
-                <td>{item["StartDate"]}</td>
-                <td>{item["DueDate "]}</td>
+                <td>{item["DueDate"]}</td>
               </tr>
             ))}
 

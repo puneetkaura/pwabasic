@@ -7,7 +7,7 @@ const Accordion = ({Importance }) => {
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
           {/* <div>{Id}</div> */}
-          <div className='text-3xl'>{isActive ? '-' : '+'}</div>
+          <div className='text-1xl'>{isActive ? '-' : '+'}</div>
         </div>
         {isActive && <div className="accordion-content">{Importance}</div>}
       </div>
