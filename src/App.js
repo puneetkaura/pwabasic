@@ -13,7 +13,7 @@ function App() {
   const [accordianOpen,setAccordianOpen]=useState(false)
   const handleAccordian = (activeId) => {
 
-    if(activeId == activeDesc) {
+    if(activeId === activeDesc) {
         setAccordianOpen(!accordianOpen);
     } else {
         setAccordianOpen(true);
@@ -66,7 +66,7 @@ function App() {
                   </tr>
         
                   {
-                    item["Id"]==activeDesc && accordianOpen &&
+                    item["Id"]===activeDesc && accordianOpen &&
                     <tr>
                      
                     <td colSpan={6}>
