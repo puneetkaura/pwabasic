@@ -1,6 +1,6 @@
 import './App.css';
 import DATA from './data';
-import Accordion from './accordian'
+
 import { useSearchParams } from "react-router-dom";
 import { useState } from 'react';
 
