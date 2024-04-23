@@ -41,7 +41,7 @@ function App() {
               <th>Tri-month</th>
               <th>Month</th>
               <th>Week</th>
-              <th>Date</th>
+              <th>Due Date</th>
             </tr>
           </thead>
           <tbody>
