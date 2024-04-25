@@ -2,26 +2,32 @@ import './App.css';
 import DATA from './data';
 
 import { useSearchParams } from "react-router-dom";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 function App() {
-  
+  let devicewidth = 1440
   const [searchParams] = useSearchParams();
   const name = searchParams.get("name")
   const lmpDate = searchParams.get("lmpDate")
   const [activeDesc, setActiveDesc] = useState(1)
-  const [accordianOpen,setAccordianOpen]=useState(false)
+  const [accordianOpen, setAccordianOpen] = useState(false)
   const handleAccordian = (activeId) => {
 
-    if(activeId === activeDesc) {
-        setAccordianOpen(!accordianOpen);
+    if (activeId === activeDesc) {
+      setAccordianOpen(!accordianOpen);
     } else {
-        setAccordianOpen(true);
+      setAccordianOpen(true);
     }
 
     setActiveDesc(activeId);
-}
+  }
+
+
+  useEffect(() => {
+    devicewidth = window.innerWidth
+    console.log(devicewidth)
+  });
 
   return (
     <div className="App">
@@ -39,9 +45,14 @@ function App() {
             <tr class="bg-white">
               <th>Id</th>
               <th>Test</th>
+              {
+                window.innerWidth > 768 &&
+                <>
+                  <th>Tri-month</th>
+                  <th>Month</th>
+                </>
+              }
               
-              <th>Tri-month</th>
-              <th>Month</th>
               <th>Week</th>
               <th>DueDate</th>
             </tr>
@@ -51,8 +62,8 @@ function App() {
               //  DATA.filter(item => item.StartDate > lmpDate).map((item)=>(
               DATA.map((item) => (
                 <>
-                
-                  <tr className="bg-gray-100  accordion text-left" onClick={()=>handleAccordian(item["Id"])}>
+
+                  <tr className="bg-gray-100  accordion text-left" onClick={() => handleAccordian(item["Id"])}>
 
                     <td className='text-pink-700 text-1xl'>
                       {item["Id"]}
@@ -60,24 +71,34 @@ function App() {
                     <td>{item["Checkup"]}
 
                     </td>
-                    <td>{item["Trimsester"]}
-                    </td>
-                    <td>{item["Pregnancymonth"]}</td>
+                    {
+                      window.innerWidth > 768 &&
+                      <>
+                        <td>{item["Trimsester"]}
+                        </td>
+                        <td>{item["Pregnancymonth"]}</td>
+                      </>
+                    }
+
                     <td>{item["Weekdue"]}</td>
                     <td>{item["DueDate"]}</td>
 
                   </tr>
-        
+
                   {
-                    item["Id"]===activeDesc && accordianOpen &&
+                    item["Id"] === activeDesc && accordianOpen &&
                     <tr>
-                     
-                    <td colSpan={6}>
-                      <div className='accordian-content'>
-                        {item["Importance"]}
-                      </div>
-                    </td>
-                  </tr>}
+
+                      <td colSpan={window.innerWidth > 768 ? 5 : 3}>
+
+                        <div className='accordian-content'>
+                          {item["Importance"]}
+                        </div>
+                      </td>
+                      <td >
+                        <a href='https://www.youtube.com/watch?v=aJgAwjP20RY&t=11s' target='_blank'>veiw video</a>
+                      </td>
+                    </tr>}
                 </>
 
               ))}
