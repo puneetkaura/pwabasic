@@ -39,12 +39,11 @@ function App() {
             <tr class="bg-white">
               <th>Id</th>
               <th>Test</th>
-              <tr>
+              
               <th>Tri-month</th>
               <th>Month</th>
-              </tr>
               <th>Week</th>
-              <th>Due Date</th>
+              <th>DueDate</th>
             </tr>
           </thead>
           <tbody>
