@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 
 function App() {
+  
   const [searchParams] = useSearchParams();
   const name = searchParams.get("name")
   const lmpDate = searchParams.get("lmpDate")
@@ -38,8 +39,10 @@ function App() {
             <tr class="bg-white">
               <th>Id</th>
               <th>Test</th>
+              <tr>
               <th>Tri-month</th>
               <th>Month</th>
+              </tr>
               <th>Week</th>
               <th>Due Date</th>
             </tr>
@@ -58,7 +61,8 @@ function App() {
                     <td>{item["Checkup"]}
 
                     </td>
-                    <td>{item["Trimsester"]}</td>
+                    <td>{item["Trimsester"]}
+                    </td>
                     <td>{item["Pregnancymonth"]}</td>
                     <td>{item["Weekdue"]}</td>
                     <td>{item["DueDate"]}</td>

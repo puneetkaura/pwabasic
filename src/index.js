@@ -4,11 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import {posthog} from 'posthog-js'
+import {PostHogProvider} from 'posthog-js/react';
 
+posthog.init('phc_MJ81zkALUgsWwjmLMEIAExDl0PpYNEvWsV3yAbLY6vh',{api_host:'https://us.i.posthog.com'})
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+  <PostHogProvider client={posthog}>
   <App />
+  </PostHogProvider>
   </BrowserRouter>
   
 );
