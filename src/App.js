@@ -1,12 +1,16 @@
 import './App.css';
 import DATA from './data';
-
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   let devicewidth = 1440
+  const [show, setShow] = useState(false);
+   const [videoid,setVideoid] = useState()
+  
   const [searchParams] = useSearchParams();
   const name = searchParams.get("name")
   const lmpDate = searchParams.get("lmpDate")
@@ -22,7 +26,14 @@ function App() {
 
     setActiveDesc(activeId);
   }
-
+  const handleClose = () => {
+    setShow(false);
+    setVideoid("")
+  }
+  const handleShow = (_videoid) => {
+    setShow(true);
+    setVideoid(_videoid)
+  }
 
   useEffect(() => {
     devicewidth = window.innerWidth
@@ -52,7 +63,7 @@ function App() {
                   <th>Month</th>
                 </>
               }
-              
+
               <th>Week</th>
               <th>DueDate</th>
             </tr>
@@ -95,15 +106,37 @@ function App() {
                           {item["Importance"]}
                         </div>
                       </td>
-                      <td >
-                        <a href='https://www.youtube.com/watch?v=aJgAwjP20RY&t=11s' target='_blank'>veiw video</a>
+                      <td>
+                        <>
+                          <Button variant="primary" onClick={()=>handleShow("OgwnhinI9xI")}>
+                            Video 
+                          </Button>
+
+
+                        </>
                       </td>
+
+
                     </tr>}
+
                 </>
 
               ))}
           </tbody>
         </table>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            
+          </Modal.Header>
+          <Modal.Body>
+            <iframe width="100%" height="315" src={"https://www.youtube.com/embed/"+videoid+"?si=wovHwpA9Q9Bm8Blv"} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></Modal.Body>
+          
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+          
+
+        </Modal>
       </div>
     </div>
   );
